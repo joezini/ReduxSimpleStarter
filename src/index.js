@@ -4,13 +4,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import SearchBar from './components/search_bar';
+
+const API_KEY = 'AIzaSyCiI9mFzVyaeSGZI40umM9ukuDTikcWOGw';
+
 // Create a new component. This should produce some HTML
 // "const" is ES6 for declaring constants, "() =>" is equivalent to function()
 // This creates a component class - which we can then create instances of
 const App = () => {
   // This is JSX - it looks like HTML but it's actually JS
   // This also can't be understood by a browser and must be rendered by webpack
-  return <div>Hi!</div>;
+  return (
+    <div>
+      <SearchBar />
+    </div>
+  );
 }
 
 // Take this component's generated HTML and put it on the page (in the DOM)
